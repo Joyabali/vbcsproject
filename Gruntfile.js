@@ -8,4 +8,10 @@
  */
 module.exports = (grunt) => {
     require('load-grunt-tasks')(grunt);
+    grunt.registerTask('vb-build', [
+        'vb-clean',
+        'vb-process',
+        'vb-optimize',
+        'vb-manifest',
+    ]);
 };
