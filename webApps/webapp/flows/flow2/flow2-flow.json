@@ -1,0 +1,10 @@
+{
+    "flowModelVersion": "18.4.1",
+    "id": "flow2",
+    "description": "Flow main",
+    "defaultPage": "flow2-start",
+    "chains": {},
+    "services": {},
+    "types": {},
+    "variables": {}
+}

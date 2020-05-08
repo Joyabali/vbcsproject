@@ -1,0 +1,30 @@
+{
+  "defaultPage" : "shell",
+  "types" : { },
+  "variables" : {
+    "initialLoad" : {
+      "type" : "string",
+      "defaultValue" : "Yes"
+    }
+  },
+  "security" : { },
+  "applicationModelVersion" : "18.4.1",
+  "chains" : { },
+  "translations" : {
+    "app" : {
+      "path" : "./resources/strings/app/nls/app-strings"
+    }
+  },
+  "description" : "A new VB app",
+  "id" : "starter",
+  "services" : { },
+  "userConfig" : {
+    "type" : "vb/DefaultSecurityProvider",
+    "configuration" : {
+      "authentication" : {
+        "type" : "oraclecloud"
+      }
+    },
+    "embedding" : "deny"
+  }
+}
