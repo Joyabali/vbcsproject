@@ -24,6 +24,5 @@ steps:
     buildType: 'current'
     downloadType: 'single'
     artifactName: 'Build'
-    itemPattern: '/**'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    downloadPath: '$(System.ArtifactsDirectory)/build/processed'
 
