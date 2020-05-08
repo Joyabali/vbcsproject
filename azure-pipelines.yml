@@ -19,3 +19,11 @@ steps:
     npm install
     ./node_modules/.bin/grunt vb-build --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver)
   displayName: 'npm install and vb-build'
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'Build'
+    itemPattern: '/**'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
