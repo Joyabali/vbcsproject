@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    ./node_modules/.bin/grunt vb-build --url=$URL --username=$USERNAME --password=$PASSWORD --id=$ID --ver=$VER
+    ./node_modules/.bin/grunt vb-build --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver)
   displayName: 'npm install and vb-build'
