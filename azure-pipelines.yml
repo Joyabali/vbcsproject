@@ -21,6 +21,6 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    ls
     cd build
+    ls
   displayName: 'list file'
