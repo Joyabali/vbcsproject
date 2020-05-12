@@ -22,4 +22,5 @@ steps:
 
 - script: |
     ls
+    cd build
   displayName: 'list file'
