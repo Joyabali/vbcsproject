@@ -20,3 +20,6 @@ steps:
     ./node_modules/.bin/grunt vb-clean vb-process vb-optimize vb-manifest --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver)
   displayName: 'npm install and build'
 
+- script: |
+    ls
+  displayName: 'list file'
