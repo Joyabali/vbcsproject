@@ -21,7 +21,7 @@ steps:
 
 - script: |
     npm install
-    ./node_modules/.bin/grunt vb-clean vb-process vb-optimize vb-manifest --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver) --schema=dev
+    ./node_modules/.bin/grunt vb-build --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver) --schema=dev
     # ./node_modules/.bin/grunt vb-clean vb-process vb-optimize vb-manifest --url=$(url) --username=$(username) --password=$(password) --id=$(id) --ver=$(ver)
   displayName: 'npm install,build and stage vb app'
 
