@@ -6,6 +6,10 @@
 trigger:
 - master
 
+variables:
+  uiSource: '/'
+  uiBuild: '$(uiSource)/build'
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -24,3 +28,5 @@ steps:
     cd build
     ls
   displayName: 'list file'
+
+
