@@ -8,7 +8,7 @@ trigger:
 
 variables:
   uiSource: '/'
-  uiBuild: '$(uiSource)/build'
+  uiBuild: '$(uiSource)/build/optimized/*'
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -29,4 +29,10 @@ steps:
     ls
   displayName: 'list file'
 
-
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(uiBuild)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
